@@ -1,25 +1,51 @@
 const express = require('express');
 const router = express.Router();
 
+const submission = [];
+
 router.get('/', (req, res) => {
-    res.render('home')
+    res.render('home' ,{title: 'Home'});
 });
 
 router.get('/about', (req, res) => {
-    res.render('about')
+    res.render('about' ,{title: 'About'});
 });
 
 router.get('/events', (req, res) => {
-    res.render('events')
+    res.render('events' ,{title: 'Events'});
 });
 
-
 router.get('/contact', (req, res) => {
-    res.render('contact')
+    res.render('contact' ,{title: 'Contact'});
 });
 
 router.get('/thankyou', (req, res) => {
-    res.render('thankyou')
+
+    const {name} = req.query;
+    res.render('thankyou' ,{title: 'Thank You', name});
+
+});
+
+
+
+router.post('/contact', (req, res) => {
+
+    const { name, email, message } = req.body;
+
+    const newSubmission = {
+
+        name,
+        email,
+        message
+
+    };
+
+    submission.push(newSubmission);
+
+    res.redirect(`/thankyou?name=${encodeURIComponent(name)}`);
+
+    console.log(`Submitted:  ${name}, ${email}, ${message}`);
+    
 });
 
 module.exports = router;

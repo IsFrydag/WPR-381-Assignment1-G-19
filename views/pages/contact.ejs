@@ -9,21 +9,19 @@
   </head>
 
   <body>
-
-    <nav>
-      
-      <a href="/">Home</a> | <a href="/about">About</a> |
-      <a href="/events">Events</a> | <a href="/contact">Contact</a>
-
-    </nav>
-
     <h1>Contact Us</h1>
     
     <form method="POST" action="/contact">
 
+      <label id="nameID">Name:</label>
       <input type="text" name="name" placeholder="Your Name" required /><br />
+
+      <label id="emailID"></label>
       <input type="email" name="email" placeholder="Your Email" required /><br />
+
+      <label id="messageID"></label>
       <textarea name="message" placeholder="Your Message" required></textarea><br />
+      
       <button type="submit">Send</button>
       
     </form>
