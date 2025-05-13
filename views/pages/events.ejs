@@ -1,2 +1,48 @@
-<h1>Upcoming Events</h1>
-<p>Check out what's happening soon!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Community Portal</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <%- include('partials/header', { title: 'Events' }) %>
+
+    <h1>Events</h1>
+
+    <!--  dummy data for events (can change later) -->
+      <!--  when naming the images, use the names below -->
+    <%
+    const events = [
+        { title: 'Local Farmers Market', date: '2025-06-03', location: 'Community Park', image: 'farmers.jpg' },
+        { title: 'Neighborhood Cleanup', date: '2025-06-10', location: '5th Street & Elm', image: 'cleanup.jpg' },
+        { title: 'Open Mic Night', date: '2025-06-17', location: 'Community Center', image: 'openmic.jpg' },
+        { title: 'Art in the Park', date: '2025-06-24', location: 'Riverside Park', image: 'art.jpg' }
+    ];
+    %>
+
+    <section>
+        <% if (events && events.length > 0) { %>
+            <% events.forEach(event => { %>
+                <div class="event-card">
+                    <img src="/images/<%= event.image %>" alt="<%= event.title %>">
+                    <div>
+                        <h2><%= event.title %></h2>
+                        <p>Date: <%= event.date %></p>
+                        <p>Location: <%= event.location %></p>
+                    </div>
+                </div>
+            <% }) %>
+        <% } else { %>
+            <p>No events found.</p>
+        <% } %>
+    </section>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>

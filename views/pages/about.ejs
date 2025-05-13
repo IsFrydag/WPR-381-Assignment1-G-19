@@ -1,1 +1,43 @@
-<h1>About Us</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Community Portal</title>
+    <link rel="stylesheet" href="/css/style.css" />
+
+</head>
+<body>
+
+    <%- include('partials/header', { title: 'About' }) %>
+
+    <h1>About Us</h1>
+
+    <section>
+        <h2>Our Team</h2>
+
+        <%
+            const team = [
+                { name: 'Heiner Freitag', role: 'Team Lead & Backend' },
+                { name: 'Joshue Levi Visser', role: 'Frontend' },
+                { name: 'Lene Le Roux', role: 'Frontend' },
+                { name: 'Neo Rankapole', role: 'Backend' }
+            ];
+        %>
+
+        <ul>
+            <% team.forEach(member => { %>
+                <li>
+                    <strong><%= member.name %></strong> - <%= member.role %>
+                </li>
+            <% }) %>
+        </ul>
+
+        <p>Our mission is to foster meaningful connections by building a digital space where community thrives</p>
+    </section>
+
+    <%- include('partials/footer') %>
+
+</body>
+</html>
