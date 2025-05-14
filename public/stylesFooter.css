@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+.wordsFoot{
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    margin-top: 200vh;
+    border: 1px solid #F2EFE7;
+    border-radius: 1rem;
+    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
+    color: #F2EFE7;
+    text-align: center;
+    background-color: #0C0C0C;
+}

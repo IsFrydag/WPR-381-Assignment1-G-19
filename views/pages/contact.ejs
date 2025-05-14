@@ -1,32 +1,38 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-
-    <title>Community Portal</title>
-    <link rel="stylesheet" href="/css/style.css" />
-
-  </head>
-
-  <body>
-    <h1>Contact Us</h1>
-    
-    <form method="POST" action="/contact">
-
-      <label id="nameID">Name:</label>
-      <input type="text" name="name" placeholder="Your Name" required /><br />
-
-      <label id="emailID"></label>
-      <input type="email" name="email" placeholder="Your Email" required /><br />
-
-      <label id="messageID"></label>
-      <textarea name="message" placeholder="Your Message" required></textarea><br />
-      
-      <button type="submit">Send</button>
-      
-    </form>
-
-  </body>
-</html>
-
-
+<link rel="stylesheet" href="/style.css">
+<body>
+</body>
+<div class="wrapper">
+  <%- include('../partials/header') %>
+  <div class="box">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <%- include('../partials/footer') %>
+</div>
+<main> 
+  <h2>Contact Us</h2>
+  <div class="wordsC">
+    <div class="word"><p>
+        Get a hold of us! We love hearing from you. Whether you have a question, feedback, or just want to say hello, we're here to listen.</p></div>
+    <div class="word"><p>
+      For more information about our community, upcoming events, or how you can get involved, we’d love to hear from you! <br><br><br><br>
+      Call us: 083 123 4567 <br><br><br>
+      Email: community@gmail.com </p></div>
+</div>
+</main>
+<!-- <form method="POST" action="/contact">
+  
+  <input type="text" name="name" placeholder="Your Name" required /><br />
+  <input type="email" name="email" placeholder="Your Email" required /><br />
+  <textarea name="message" placeholder="Your Message" required></textarea><br />
+  <button type="submit">Send</button>
+  
+</form> -->

@@ -1,19 +1,27 @@
-const express = require("express");
-const path = require("path");
-const pageRoutes = require("./routes/pageRoutes");
+//  main entry point 
+// set up includes the server, middleware, and routes 
+
+const express = require('express');
+const path = require('path');
+const pageRoutes = require('./routes/pageRoutes');
 
 const app = express();
-const port = 3000;
 
-app.use(express.urlencoded({ extended: true}));
-app.use(express.json());
+// ensuring engine is set to ejs
+app.set('view engine', 'ejs');
 
-app.use(express.static(path.join(__dirname, "public")));
-app.set("view engine", "ejs");
-app.set("views", path.join(__dirname, "views/pages"));
+// static files from public directory
+app.use(express.static(path.join(__dirname, 'public')));
 
-app.use("/", pageRoutes);
+// middleware (url encoded) for form submissions
+app.use(express.urlencoded({ extended: true }));
 
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
+// page routes
+app.use('/', pageRoutes);
+
+// port
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
+

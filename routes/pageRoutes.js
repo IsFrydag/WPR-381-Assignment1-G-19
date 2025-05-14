@@ -1,51 +1,58 @@
+// routes/pageRoutes.js
+
 const express = require('express');
 const router = express.Router();
 
-const submission = [];
+// replace with real data - just dummy data for now
+const teamMembers = [
+    { name: 'Calvin Nijenhuis', role: 'Team Lead' },
+    { name: 'Brett Wilson', role: 'Backend Developer' },
+    { name: 'Danielle Janse van Vuuren', role: 'Frontend Developer' },
+    { name: 'Ruan Bath', role: 'Data Manager' },
+    { name: 'Le Marsh Vaughan', role: 'Documentation Manager' }
+];
 
+// replace with real data - just dummy data for now
+const events = [
+    { title: 'Hackathon', date: '2025-05-15', location: 'Online', image: 'tech.jpg' },
+    { title: 'Art Festival', date: '2025-06-01', location: 'Stellenbosch', image: 'art.jpg' },
+    { title: 'Music Jam', date: '2025-07-20', location: 'Cape Town', image: 'music.jpg' }
+];
+
+// message storage 
+const messages = [];
+
+// home page
 router.get('/', (req, res) => {
-    res.render('home' ,{title: 'Home'});
+    res.render('pages/home', { teamMembers, events });
 });
 
+// about page
 router.get('/about', (req, res) => {
-    res.render('about' ,{title: 'About'});
+    res.render('pages/about', { teamMembers });
 });
 
+// events page
 router.get('/events', (req, res) => {
-    res.render('events' ,{title: 'Events'});
+    res.render('pages/events', { events });
 });
 
+// contact page
 router.get('/contact', (req, res) => {
-    res.render('contact' ,{title: 'Contact'});
+    res.render('pages/contact');
 });
 
-router.get('/thankyou', (req, res) => {
-
-    const {name} = req.query;
-    res.render('thankyou' ,{title: 'Thank You', name});
-
-});
-
-
-
+// (POST) for contact form  
 router.post('/contact', (req, res) => {
-
     const { name, email, message } = req.body;
+    messages.push({ name, email, message });
+    res.redirect('/thankyou');
+});
 
-    const newSubmission = {
-
-        name,
-        email,
-        message
-
-    };
-
-    submission.push(newSubmission);
-
-    res.redirect(`/thankyou?name=${encodeURIComponent(name)}`);
-
-    console.log(`Submitted:  ${name}, ${email}, ${message}`);
-    
+// thank you page
+router.get('/thankyou', (req, res) => {
+    res.render('pages/thankyou', { messages });
 });
 
 module.exports = router;
+

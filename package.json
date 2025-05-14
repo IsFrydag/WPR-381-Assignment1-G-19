@@ -1,7 +1,37 @@
 {
+  "name": "community-portal",
+  "version": "1.0.0",
+  "description": "A dynamic community portal website built using Node.js, Express, and EJS.",
+  "keywords": [
+    "community",
+    "portal",
+    "nodejs",
+    "express",
+    "ejs",
+    "website"
+  ],
+  "homepage": "https://github.com/IsFrydag/WPR-381-Assignment1-G-19.git#readme",
+  "bugs": {
+    "url": "https://github.com/IsFrydag/WPR-381-Assignment1-G-19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsFrydag/WPR-381-Assignment1-G-19.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "dependencies": {
     "ejs": "^3.1.10",
-    "express": "^5.1.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.10"
   }
 }
