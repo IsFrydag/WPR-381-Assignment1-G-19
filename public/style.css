@@ -58,7 +58,6 @@ h2{
     font-family: poppins;
     position: absolute;
     width: 40%;
-    padding: 15px;
     top: 30rem;
     text-align: center;
     transform: translate(-50%, -50%);
@@ -69,6 +68,8 @@ h2{
     border: 1px solid #F2EFE7;
     border-radius: 1rem;
     box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
+
+    padding: 40 10 0 10;
 }
 .words6{
     font-family: poppins;
@@ -306,4 +307,106 @@ h2{
         transform: scale(1.3) translateY(-90px) rotate(360deg);
         opacity: 0;
     }
+}
+
+#nameID{
+
+    border-radius: 10px;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+
+#emailID{
+
+    border-radius: 10px;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+
+#messageID{
+
+    border-radius: 10px;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+#sendButton{
+
+    border-radius: 10px;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+#contactHead{
+
+    padding-bottom: 20px;
+
+}
+
+.wordsT{
+    font-family: poppins;
+    position: absolute;
+    width: 40%;
+    top: 30rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+    color: #F2EFE7;
+    margin-left: 50%;
+    border: 1px solid #F2EFE7;
+    border-radius: 1rem;
+    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
+
+    padding: 20 10 20 10;
+}
+
+#thankButton{
+
+    color: black;
+    text-decoration: none;
+
+}
+
+.wordsT a {
+    color: black;
+    text-decoration: none;
+    font-size: 16;
+    padding: 15px;
+}
+
+.wordsA{
+
+    font-family: poppins;
+    position: absolute;
+    width: 40%;
+    top: 30rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+    color: #F2EFE7;
+    margin-left: 50%;
+    border: 1px solid #F2EFE7;
+    border-radius: 1rem;
+    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
+
+    padding: 20 10 20 10;
+
+    margin-top: 650px;
+
 }

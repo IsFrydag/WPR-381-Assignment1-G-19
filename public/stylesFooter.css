@@ -13,3 +13,10 @@ h1{
     text-align: center;
     background-color: #0C0C0C;
 }
+
+.pFooter:hover{
+
+    font-size: 13pt;
+    color: rgb(0, 195, 255);
+
+}

@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="/style.css">
 <body>
 </body>
+
 <div class="wrapper">
   <%- include('../partials/header') %>
   <div class="box">
@@ -17,22 +18,36 @@
   </div>
   <%- include('../partials/footer') %>
 </div>
+
 <main> 
-  <h2>Contact Us</h2>
+
+  <h2 id="contactHead">Contact Us</h2>
+
   <div class="wordsC">
+
     <div class="word"><p>
-        Get a hold of us! We love hearing from you. Whether you have a question, feedback, or just want to say hello, we're here to listen.</p></div>
+        Get a hold of us! We love hearing from you. Whether you have a question, feedback, or just want to say hello, we're here to listen.</p>
+    </div>
+
     <div class="word"><p>
       For more information about our community, upcoming events, or how you can get involved, we’d love to hear from you! <br><br><br><br>
       Call us: 083 123 4567 <br><br><br>
-      Email: community@gmail.com </p></div>
-</div>
+      Email: community@gmail.com </p>
+    </div>
+
+    <form method="POST" action="/contact">
+
+      <input id="nameID" type="text" name="name" placeholder="Your Name" required /><br />
+
+      <input id="emailID" type="email" name="email" placeholder="Your Email" required /><br />
+
+      <textarea id="messageID" name="message" placeholder="Your Message" required></textarea><br />
+      
+      <button id="sendButton" type="submit">Send</button>
+    
+    </form>
+
+  </div>
+
+  
 </main>
-<!-- <form method="POST" action="/contact">
-  
-  <input type="text" name="name" placeholder="Your Name" required /><br />
-  <input type="email" name="email" placeholder="Your Email" required /><br />
-  <textarea name="message" placeholder="Your Message" required></textarea><br />
-  <button type="submit">Send</button>
-  
-</form> -->

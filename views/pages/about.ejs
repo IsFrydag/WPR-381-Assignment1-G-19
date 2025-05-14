@@ -1,40 +1,76 @@
 
 <link rel="stylesheet" href="/style.css">
-<body>
-    <div class="wrapper">
-        <%- include('../partials/header') %>
-        <div class="box">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <%- include('../partials/footer') %>
-    </div>
-    <main> 
-        <h2>About Us</h2>
-    <div class="words2">
-    <div class="word"><p>
-        At BlueCycle, we believe in the power of community. We are a group of individuals who are passionate about making a difference in the world by 
-        promoting a healthy and sustainable environments through the power of recycling.</p></div>
-    <div class="word"><p>
-        We offer communities the option of allowing us to collect their waste and recycle it for free. We do the boring work for you by collecting and sorting your waste.
-        Despite the complexity of the recycling process, we make it as easy as possible for you to recycle your waste.</p></div>
-    <div class="word"><p>
-        But wait, there's more! We also offer a wide range of recycling services, including metal recycling, paper recycling, and glass recycling. 
-        And if that isn't enough, we will even pay you a precentage of the value of your waste!</p></div>
-    </div>
-    <div class="pics2">
-        <img src="recycle.jpg" alt="recycle">
-    </div>
-</div>
 
-    </main>
-</body>
+    <body>
+
+        <div class="wrapper">
+
+            <%- include('../partials/header') %>
+            
+            <div class="box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <%- include('../partials/footer') %>
+
+        </div>
+
+        <main> 
+            
+            <h2>About Us</h2>
+
+            <div class="words2">
+
+                <div class="word"><p>
+                    At BlueCycle, we believe in the power of community. We are a group of individuals who are passionate about making a difference in the world by 
+                    promoting a healthy and sustainable environments through the power of recycling.</p>
+                </div>
+
+                <div class="word"><p>
+                    We offer communities the option of allowing us to collect their waste and recycle it for free. We do the boring work for you by collecting and sorting your waste.
+                    Despite the complexity of the recycling process, we make it as easy as possible for you to recycle your waste.</p>
+                </div>
+
+                <div class="word"><p>
+                    But wait, there's more! We also offer a wide range of recycling services, including metal recycling, paper recycling, and glass recycling. 
+                    And if that isn't enough, we will even pay you a precentage of the value of your waste!</p>
+                </div>
+
+            </div>
+
+            <div class="pics2">
+                <img src="recycle.jpg" alt="recycle">
+            </div>
+
+            <div class="wordsA">
+
+                <div class="word">
+
+                    <% teamMembers.forEach(member => { %>
+
+                        <div class="word">
+
+                                <p><strong><%= member.name %></strong> - <%= member.role %></p>
+
+                        </div>
+
+                    <% }) %>
+
+                </div>
+
+            </div>
+
+        </main>
+        
+    </body>
+
 </html>

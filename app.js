@@ -12,6 +12,7 @@ app.set('view engine', 'ejs');
 
 // static files from public directory
 app.use(express.static(path.join(__dirname, 'public')));
+app.set("views", path.join(__dirname, "views/pages"));
 
 // middleware (url encoded) for form submissions
 app.use(express.urlencoded({ extended: true }));
