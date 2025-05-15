@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/css/style.css">
 
   <body>
 
@@ -49,8 +49,43 @@
       </div>
 
       <div class="pics1">
-          <img src="about-chair.jpg" alt="chair">
+          <img src="/images/about-chair.jpg" alt="chair">
       </div>
+
+      <div class="homeEvents">
+
+        <div class="word">
+
+          <% events.forEach(event => { %>
+
+            <div class="word">
+
+              <p><strong><%= event.title %></strong> - <%= event.date %> - <%= event.location %></p>
+
+            </div>
+
+          <% }) %>
+
+        </div>
+
+        <div class="hEventsWrapper">
+
+        <% events.forEach(event => { %>
+
+          <div class="hEventsImages">
+
+            <p><strong><%= event.title %></strong></p>
+            <img src="<%= event.image %>" alt="<%= event.title %>" style="max-width: 400px; max-height: 240px;">
+          
+          </div>
+
+        <% }) %>
+
+      </div>
+
+      </div>
+
+      
 
     </main>
 

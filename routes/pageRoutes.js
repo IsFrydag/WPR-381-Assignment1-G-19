@@ -10,9 +10,9 @@ const teamMembers = [
 
 const events = [
     
-    { title: 'Hackathon', date: '2025-05-15', location: 'Online', image: 'tech.jpg' },
-    { title: 'Art Festival', date: '2025-06-01', location: 'Stellenbosch', image: 'art.jpg' },
-    { title: 'Music Jam', date: '2025-07-20', location: 'Cape Town', image: 'music.jpg' }
+    { title: 'Open Mic', date: '2025-05-15', location: 'Pretoria', image:  'images/OpenMicHome.jpg'},
+    { title: 'Farmers Market', date: '2025-06-01', location: 'Stellenbosch', image: 'images/FarmrsMarket.jpg'},
+    { title: 'Beach Clean-Up', date: '2025-07-20', location: 'Cape Town', image: 'images/BeachCleanup.jpg'}
 
 ];
 
@@ -21,7 +21,7 @@ const submission = [];
 
 // home page
 router.get('/', (req, res) => {
-    res.render('home', { teamMembers, events });
+    res.render('home', { events });
 });
 
 // about page
@@ -31,7 +31,7 @@ router.get('/about', (req, res) => {
 
 // events page
 router.get('/events', (req, res) => {
-    res.render('events', { events });
+    res.render('events');
 });
 
 // contact page
