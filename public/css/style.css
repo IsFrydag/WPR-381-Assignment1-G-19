@@ -38,6 +38,58 @@ h2{
     border-radius: 1rem;
     box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
 }
+.pics1 img{
+    position: absolute;
+    width: 40%;
+    height: 51%;
+    padding: 15px;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    margin-left: 25%;
+    border: 1px solid #F2EFE7;
+    border-radius: 1rem;
+    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
+}
+.homeEvents{
+    font-family: poppins;
+    position: absolute;
+    width: 80%;
+    top: 30rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+    color: #F2EFE7;
+    margin-left: 50%;
+    border: 1px solid #F2EFE7;
+    border-radius: 1rem;
+    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
+
+    padding: 20 10 20 10;
+
+    margin-top: 900px;
+    margin-right: 100px;
+}
+.hEventsImages{
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #F2EFE7;
+    border: 1px solid #F2EFE7;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+.hEventsWrapper {
+
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+/* End of home page css */
+
 .words3{
     font-family: poppins;
     position: absolute;
@@ -53,23 +105,6 @@ h2{
     border: 1px solid #F2EFE7;
     border-radius: 1rem;
     box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
-}
-.wordsC{
-    font-family: poppins;
-    position: absolute;
-    width: 40%;
-    top: 30rem;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    font-size: 20px;
-    color: #F2EFE7;
-    margin-left: 50%;
-    border: 1px solid #F2EFE7;
-    border-radius: 1rem;
-    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
-
-    padding: 40 10 0 10;
 }
 .words6{
     font-family: poppins;
@@ -154,34 +189,6 @@ h2{
     border-radius: 1rem;
     box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
 }
-.words2, .words5{
-    font-family: poppins;
-    position: absolute;
-    width: 40%;
-    padding: 15px;
-    top: 60%;
-    text-align: left;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    font-size: 20px;
-    color: #F2EFE7;
-    margin-left: 30%;
-    border: 1px solid #F2EFE7;
-    border-radius: 1rem;
-    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
-}
-.pics1 img{
-    position: absolute;
-    width: 40%;
-    height: 51%;
-    padding: 15px;
-    top: 60%;
-    transform: translate(-50%, -50%);
-    margin-left: 25%;
-    border: 1px solid #F2EFE7;
-    border-radius: 1rem;
-    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
-}
 .pics3 img{
     position: absolute;
     width: 40%;
@@ -218,6 +225,93 @@ h2{
     border-radius: 1rem;
     box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
 }
+
+/* End of events page css */
+
+.wordsC{
+    font-family: poppins;
+    position: absolute;
+    width: 40%;
+    top: 30rem;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+    color: #F2EFE7;
+    margin-left: 50%;
+    border: 1px solid #F2EFE7;
+    border-radius: 1rem;
+    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
+
+    padding: 40 10 0 10;
+}
+
+#contactHead{
+
+    padding-bottom: 20px;
+
+}
+
+#nameID{
+
+    border-radius: 10px;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+
+#emailID{
+
+    border-radius: 10px;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+
+#messageID{
+
+    border-radius: 10px;
+
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+#sendButton{
+
+    border-radius: 10px;
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+/* End of contact page css */
+
+.words2{
+    font-family: poppins;
+    position: absolute;
+    width: 40%;
+    padding: 15px;
+    top: 60%;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 20px;
+    color: #F2EFE7;
+    margin-left: 30%;
+    border: 1px solid #F2EFE7;
+    border-radius: 1rem;
+    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
+}
 .pics2 img{
     position: absolute;
     width: 40%;
@@ -230,22 +324,30 @@ h2{
     border-radius: 1rem;
     box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
 }
-.pics5 img{
+.wordsA{
+
+    font-family: poppins;
     position: absolute;
     width: 40%;
-    height: 51%;
-    padding: 15px;
-    top: 60%;
+    top: 30rem;
+    text-align: center;
     transform: translate(-50%, -50%);
-    margin-left: 75%;
+    font-weight: bold;
+    font-size: 20px;
+    color: #F2EFE7;
+    margin-left: 50%;
     border: 1px solid #F2EFE7;
     border-radius: 1rem;
     box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
+
+    padding: 20 10 20 10;
+
+    margin-top: 650px;
+
 }
- .container{
-    display: flex;
-    justify-content: flex-end;
- }
+
+/* end of about page css */
+
 .box div{
     position: absolute;
     width: 60px;
@@ -309,53 +411,7 @@ h2{
     }
 }
 
-#nameID{
-
-    border-radius: 10px;
-
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
-
-}
-
-#emailID{
-
-    border-radius: 10px;
-
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
-
-}
-
-#messageID{
-
-    border-radius: 10px;
-
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-
-}
-
-#sendButton{
-
-    border-radius: 10px;
-
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 15px;
-    padding-right: 15px;
-
-}
-
-#contactHead{
-
-    padding-bottom: 20px;
-
-}
+/* End of code for background effects */
 
 .wordsT{
     font-family: poppins;
@@ -389,70 +445,4 @@ h2{
     padding: 15px;
 }
 
-.wordsA{
-
-    font-family: poppins;
-    position: absolute;
-    width: 40%;
-    top: 30rem;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    font-size: 20px;
-    color: #F2EFE7;
-    margin-left: 50%;
-    border: 1px solid #F2EFE7;
-    border-radius: 1rem;
-    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
-
-    padding: 20 10 20 10;
-
-    margin-top: 650px;
-
-}
-
-.homeEvents{
-
-    font-family: poppins;
-    position: absolute;
-    width: 80%;
-    top: 30rem;
-    text-align: center;
-    transform: translate(-50%, -50%);
-    font-weight: bold;
-    font-size: 20px;
-    color: #F2EFE7;
-    margin-left: 50%;
-    border: 1px solid #F2EFE7;
-    border-radius: 1rem;
-    box-shadow: 2rem 2rem 1rem rgba(0,0,0,0.5);
-
-    padding: 20 10 20 10;
-
-    margin-top: 900px;
-    margin-right: 100px;
-
-}
-
-.hEventsImages{
-
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    color: #F2EFE7;
-    border: 1px solid #F2EFE7;
-    border-radius: 1rem;
-    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
-    padding: 1rem;
-    
-
-}
-
-.hEventsWrapper {
-
-    display: flex;
-    gap: 2rem; /* space between boxes */
-    justify-content: center; /* center them horizontally */
-    flex-wrap: wrap; /* wrap to next line on small screens */
-    margin-top: 3rem;
-
-}
+/* end of code for thank you page css */
